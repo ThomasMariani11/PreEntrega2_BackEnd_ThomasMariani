@@ -1,0 +1,161 @@
+[
+	{
+		"id": 1,
+		"titulo": "remera 01221",
+		"imagen": "/img/remeras/img1.jpg",
+		"categoria": "remera",
+		"precio": "10000",
+		"descripcion": "remera temporada 2024",
+		"stock": "12",
+		"codigo": "rem01"
+	},
+	{
+		"id": 2,
+		"titulo": "remera 01221",
+		"imagen": "/img/remeras/img2.jpg",
+		"categoria": "remera",
+		"precio": 10000,
+		"descripcion": "remera temporada 2024",
+		"stock": 12,
+		"codigo": "rem01",
+		"status": true
+	},
+	{
+		"id": 3,
+		"titulo": "remera 01221",
+		"imagen": "/img/remeras/img3.jpg",
+		"categoria": "remera",
+		"precio": 10000,
+		"descripcion": "remera temporada 2024",
+		"stock": 12,
+		"status": true,
+		"codigo": "rem01"
+	},
+	{
+		"id": 4,
+		"titulo": "Remera 04",
+		"imagen": "/img/remeras/img4.jpg",
+		"categoria": "Remeras",
+		"precio": 13000,
+		"descripcion": "Remera Manga Corta Blanca | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 5,
+		"titulo": "Pantalon 01",
+		"imagen": "/img/pantalones/img1p.jpg",
+		"categoria": "Pantalones",
+		"precio": 20000,
+		"descripcion": "Pantalon Liso Celeste | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 6,
+		"titulo": "Pantalon 02",
+		"imagen": "/img/pantalones/img2p.jpg",
+		"categoria": "Pantalones",
+		"precio": 22000,
+		"descripcion": "Pantalon Liso Negro | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 7,
+		"titulo": "Pantalon 03",
+		"imagen": "/img/pantalones/img3p.jpg",
+		"categoria": "Pantalones",
+		"precio": 23000,
+		"descripcion": "Pantalon Liso Celeste | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 8,
+		"titulo": "Pantalon 04",
+		"imagen": "/img/pantalones/img4p.jpg",
+		"categoria": "Pantalones",
+		"precio": 25000,
+		"descripcion": "Pantalon Liso Celeste | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 9,
+		"titulo": "Zapatillas 01",
+		"imagen": "/img/zapatillas/img1z.jpg",
+		"categoria": "Zapatillas",
+		"precio": 30000,
+		"descripcion": "Zapatillas Urbanas Blancas | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 10,
+		"titulo": "Zapatillas 02",
+		"imagen": "/img/zapatillas/img2z.jpg",
+		"categoria": "Zapatillas",
+		"precio": 31000,
+		"descripcion": "Zapatillas Urbanas Negra y Gris | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 11,
+		"titulo": "Zapatillas 03",
+		"imagen": "/img/zapatillas/img3z.jpg",
+		"categoria": "Zapatillas",
+		"precio": 33000,
+		"descripcion": "Zapatillas Urbanas Verde | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 12,
+		"titulo": "Zapatillas 04",
+		"imagen": "/img/zapatillas/img4z.jpg",
+		"categoria": "Zapatillas",
+		"precio": 34000,
+		"descripcion": "Zapatillas Urbanas Naranja | Temporada Verano 2024",
+		"stock": 15
+	},
+	{
+		"id": 13,
+		"titulo": "Remera 012",
+		"img": "./img1"
+	},
+	{
+		"id": 14,
+		"titulo": "remera 06",
+		"descripcion": "remera temporada 2024",
+		"codigo": "rem01",
+		"precio": "10000",
+		"stock": "15",
+		"categoria": "remera",
+		"img": "./img1"
+	},
+	{
+		"id": 15,
+		"titulo": "remera 012",
+		"descripcion": "remera temporada 2024",
+		"codigo": "rem01",
+		"precio": "10000",
+		"stock": "15",
+		"categoria": "remera",
+		"img": "./img1"
+	},
+	{
+		"id": 16,
+		"status": true,
+		"titulo": "remera 0121",
+		"descripcion": "remera temporada 2024",
+		"codigo": "rem01",
+		"precio": "10000",
+		"stock": "12",
+		"categoria": "remera",
+		"img": "./img1"
+	},
+	{
+		"id": 17,
+		"status": true,
+		"titulo": "remerads",
+		"descripcion": "dksfjmk",
+		"codigo": "d,f",
+		"precio": 1000,
+		"stock": 15,
+		"categoria": "remera"
+	}
+]
