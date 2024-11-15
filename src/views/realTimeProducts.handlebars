@@ -3,7 +3,7 @@
 <input type="text" name="" id="agregar">
 
 
-<p>ingrese producto a eliminar</p>
+<p>ingrese id de producto a eliminar</p>
 <input type="text" name="" id="eliminar">
 
 
@@ -16,6 +16,7 @@
     {{#each products}}
         <li>
             <p>Producto: {{titulo}}</p>
+            <p>ID: {{id}}</p>
             <p>Precio: {{precio}}</p>
             <p>Stock: {{stock}}</p>
             <img src="{{imagen}}" alt="" id="imagen"">

@@ -3,7 +3,7 @@ import {engine} from 'express-handlebars'
 import {router as productRoute} from './routes/productRoute.js'
 import { router as cartRoute } from './routes/cartRoute.js'
 import {Server} from 'socket.io'
-
+import { ProductManager } from '../src/dao/ProductManager.js'
 const PORT = 8080
 const app = express()
 
@@ -37,15 +37,17 @@ export const productosEliminar = []
 io.on('connection', (socket) => {
     console.log(`usuario conectado ${socket.id}`);
     
-    socket.on('productoAgregar', productoAgregar => {
-        
-        productosAgregar.push(productoAgregar)
-        socket.emit('productoAgregarVista', productoAgregar)
+    socket.on('productoAgregar', async (productoAgregar, precio, stock) => {
+        let nuevoProduct = await ProductManager.addProduct({titulo:productoAgregar, precio, stock})
+        socket.emit('productoAgregarVista', productoAgregar, precio, stock ,nuevoProduct)
     
     })
     
-    socket.on('productoEliminar', productoEliminar => {
-        productosEliminar.push({productoEliminar})
+    socket.on('productoEliminar', async (productoEliminar) => {
+        let productoEliminado = await ProductManager.deleteProducts(productoEliminar)
+        socket.emit('productoEliminarVista', productoEliminar)
+        
+
     })
     
     
