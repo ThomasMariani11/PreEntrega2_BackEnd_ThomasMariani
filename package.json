@@ -2,6 +2,7 @@
   "name": "preentrega2",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {"node": "16.x"}, 
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js",

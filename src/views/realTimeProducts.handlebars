@@ -1,11 +1,33 @@
 <h2>Real Time Products</h2>
-<form action="">
-    <p>ingrese producto a agregar</p>
-    <input type="text" name="" id="">
-</form>
+<p>ingrese producto a agregar</p>
+<input type="text" name="" id="agregar">
+
+
+<p>ingrese producto a eliminar</p>
+<input type="text" name="" id="eliminar">
+
+
+
+<div id="products">
+
+</div>
+
+<ul>
+    {{#each products}}
+        <li>
+            <p>Producto: {{titulo}}</p>
+            <p>Precio: {{precio}}</p>
+            <p>Stock: {{stock}}</p>
+            <img src="{{imagen}}" alt="" id="imagen"">
+
+        </li>
+    {{/each}}
+</ul>
 
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/realTimeProducts.js"></script>

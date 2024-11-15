@@ -1,7 +1,10 @@
 import { Router } from "express"
 import { ProductManager } from '../dao/ProductManager.js'
 import { procesaErrores } from "../utils.js"
+import { productosAgregar } from "../app.js"
+import { productosEliminar } from '../app.js'
 export const router = Router()
+
 
 ProductManager.setPath('./src/data/products.json')
 
@@ -14,7 +17,9 @@ router.get('/', async (req, res) => {
 router.get('/realtimeproducts', async (req, res) => {
     let products = await ProductManager.getProducts()
     
-    res.render('realTimeProducts')
+    res.render('realTimeProducts',{
+        products
+    })
 })
 
 

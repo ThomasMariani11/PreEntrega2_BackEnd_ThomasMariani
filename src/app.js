@@ -29,3 +29,25 @@ const server = app.listen(PORT, () => {
     
 })
 const io = new Server(server)
+export const productosAgregar = []
+
+export const productosEliminar = []
+
+
+io.on('connection', (socket) => {
+    console.log(`usuario conectado ${socket.id}`);
+    
+    socket.on('productoAgregar', productoAgregar => {
+        
+        productosAgregar.push(productoAgregar)
+        socket.emit('productoAgregarVista', productoAgregar)
+    
+    })
+    
+    socket.on('productoEliminar', productoEliminar => {
+        productosEliminar.push({productoEliminar})
+    })
+    
+    
+
+})
